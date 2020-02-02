@@ -7,7 +7,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/index.css" type="text/css" />
-
     <meta charset="utf-8" />
     <meta name="category" content="Sports" />
     <meta name="language" content="Ar" />
@@ -24,85 +23,79 @@
   </head>
   <body>
     <div id="topmenu">
-      <span class="blankspan1"></span>
+      <span id="blankspan1"></span>
 
-      <span class="leagues">
-        <span class="leagueimage"><img src="pics//morocco.svg"/></span>
-        <span class="leagueimage"><img src="pics//egypt.svg"/></span>
-        <span class="leagueimage"><img src="pics//Saudi Arabia.svg"/></span>
-        <span class="leagueimage"><img src="pics//france.svg"/></span>
-        <span class="leagueimage"><img src="pics//italy.svg"/></span>
-        <span class="leagueimage"><img src="pics//spain.svg"/></span>
-        <span class="leagueimage"><img src="pics//england.svg"/></span>
+      <span id="leagues">
+        <span id="leagueimage"><img src="pics//morocco.svg"/></span>
+        <span id="leagueimage"><img src="pics//egypt.svg"/></span>
+        <span id="leagueimage"><img src="pics//Saudi Arabia.svg"/></span>
+        <span id="leagueimage"><img src="pics//france.svg"/></span>
+        <span id="leagueimage"><img src="pics//italy.svg"/></span>
+        <span id="leagueimage"><img src="pics//spain.svg"/></span>
+        <span id="leagueimage"><img src="pics//england.svg"/></span>
       </span>
 
-      <span class="blankspan2"></span>
+      <span id="blankspan2"></span>
 
       <!--
-        <span class="searchsection">
+        <span id="searchsection">
           <input
-            class="searchbar"
+            id="searchbar"
             id="sbar"
             type="search"
             required=""
             placeholder="    بحث..."
-            class="tt-query"
+            id="tt-query"
             autocomplete="off"
             spellcheck="false"
             dir="auto"
           />
-          <button class="searchtap" type="submit">
-            <i class="fa fa-search"></i>
-          </button>
+          <button id="searchtap" type="submit"><i id="fa fa-search"></i></button>
         </span>
       -->
-      <div class="container">
+      <span id="searchsection">
         <form method="GET">
           <input
             list="browsers"
             type="text"
             name="match"
-            id="sbar"
-            placeholder="Search Matches"
+            id="searchbar"
+            placeholder="    بحث..."
             required
           />
-          <button type="submit" id="searchtap">
-            <i class="fa fa-search"></i>
-          </button>
+          <button type="submit" id="buttonSearch">Search</button>
         </form>
-      </div>
-      <a class="navbar-live" href=""> live <span>22</span> </a>
+      </span>
+      <a id="navbar-live" href=""> live <span>22</span> </a>
 
-      <span class="navbar-live"> GMT-2 </span>
-      <button class="btnlogin" type="submit">دخول</button>
-      <span class="or">أو</span>
-      <button class="btnsignup" type="submit">حساب جديد</button>
+      <span id="navbar-live"> GMT-2 </span>
+      <button id="btnlogin" type="submit">دخول</button> <span id="or">أو</span>
+      <button id="btnsignup" type="submit">حساب جديد</button>
     </div>
     <div id="namemenu"><p id="sitename">مواعيد مباريات اليوم</p></div>
     <div id="bottommenu">
-      <span class="menuitem"
+      <span id="menuitem"
         ><i
-          class="fa fa-home"
+          id="fa fa-home"
           style="float: right; font-size: 1.7vw;padding-right: 1vw;padding-left: 1vw;"
         ></i>
       </span>
-      <span class="menuitem">أمس</span>
-      <span class="menuitem">مباريات اليوم</span>
-      <span class="menuitem">الغد</span> <span class="menuitem">الدوريات</span>
-      <span class="menuitem">الأخبار</span> <span class="menuitem">فيديو</span>
-      <span class="menuitem">ملخص المبارريات</span>
-      <span class="menuitem">مقالات وتحليلات</span>
-      <span class="menuitem">توقعات</span>
+      <span id="menuitem">أمس</span> <span id="menuitem">مباريات اليوم</span>
+      <span id="menuitem">الغد</span> <span id="menuitem">الدوريات</span>
+      <span id="menuitem">الأخبار</span> <span id="menuitem">فيديو</span>
+      <span id="menuitem">ملخص المبارريات</span>
+      <span id="menuitem">مقالات وتحليلات</span>
+      <span id="menuitem">توقعات</span>
     </div>
     <div id="site">
       <div id="section1"><span id="s1">مباريات اليوم</span></div>
       <div id="chooseleague">
         <ul id="calenderbuttons">
           <li id="calenderdropdown">
-            اختر الدوري <i class="fa fa-angle-down"></i>
+            اختر الدوري <i id="fa fa-angle-down"></i>
           </li>
           <li id="calenderlive">جارية حاليا</li>
-          <li id="calender-form" class="calender-date">اختر التاريخ</li>
+          <li id="calender-form" id="calender-date">اختر التاريخ</li>
         </ul>
 
         <div>
@@ -132,7 +125,7 @@
               <a href="/analytics/calendar/2020-01-30/" role="button">الخميس</a>
             </li>
 
-            <li title="الجمعة 31 يناير 2020" class="active">
+            <li title="الجمعة 31 يناير 2020" id="active">
               <a href="/analytics/calendar/2020-01-31/" role="button">الجمعة</a>
             </li>
 
@@ -147,51 +140,51 @@
         </div>
       </div>
 
-      <div id="256" class="calendar-league">
-        <div class="calendar-league-header">
+      <div id="256" id="calendar-league">
+        <div id="calendar-league-header">
           <a
             title="دوري أبطال أفريقيا"
-            class="calendar-league-heading"
+            id="calendar-league-heading"
             href="/analytics/competition/256"
           >
             <img src="pics//256.png" alt="دوري أبطال أفريقيا" /><small
               >دوري أبطال أفريقيا</small
             >
           </a>
-          <ul class="calendar-league-filter">
+          <ul id="calendar-league-filter">
             <li>
               <a
-                class="tooltip"
+                id="tooltip"
                 href="/analytics/competition/256/"
                 role="button"
                 data-tooltip="أخبار دوري أبطال أفريقيا "
-                ><i class="fa fa-calendar"></i
+                ><i id="fa fa-calendar"></i
               ></a>
             </li>
             <li>
               <a
-                class="tooltip"
+                id="tooltip"
                 href="/analytics/competition/256/#section_separator"
                 role="button"
                 data-tooltip="إحصائيات دوري أبطال أفريقيا"
-                ><i class="fa fa-list"></i
+                ><i id="fa fa-list"></i
               ></a>
             </li>
           </ul>
         </div>
 
-        <div class="calendar-league-main">
-          <div class="calendar-league-match">
-            <div class="calendar-league-content">
+        <div id="calendar-league-main">
+          <div id="calendar-league-match">
+            <div id="calendar-league-content">
               <time
-                class="calendar-league-time timezone time"
+                id="calendar-league-time timezone time"
                 data-format="HH:mm"
                 data-value="2020-02-01 13:00"
                 >05:00</time
               >
 
               <a
-                class="calendar-league-team"
+                id="calendar-league-team"
                 href="/analytics/team/3424/"
                 rel="اتحاد العاصمة"
                 title="اتحاد العاصمة"
@@ -200,12 +193,12 @@
                 <span>اتحاد العاصمة</span>
               </a>
               <a href="/analytics/match/3178871/">
-                <span class="calendar-league-score">
-                  <span class="">2</span> <span class="">2</span>
+                <span id="calendar-league-score">
+                  <span id="">2</span> <span id="">2</span>
                 </span>
               </a>
               <a
-                class="calendar-league-team"
+                id="calendar-league-team"
                 href="/analytics/team/6745/"
                 rel="بترو أتليتيكو"
                 title="بترو أتليتيكو"
@@ -219,11 +212,11 @@
                 <span>بترو أتليتيكو</span>
               </a>
 
-              <span title=" استاد 20 أوت 1955" class="calendar-league-stade"
+              <span title=" استاد 20 أوت 1955" id="calendar-league-stade"
                 >استاد 20 أوت 1955</span
               >
 
-              <span class="calendar-league-info">
+              <span id="calendar-league-info">
                 <a
                   title="الدورة 6"
                   href="/analytics/season/17954/?gameweek=6#section_separator"
@@ -232,20 +225,18 @@
                 </a>
               </span>
 
-              <a
-                class="calendar-league-details"
-                href="/analytics/match/3178871/"
+              <a id="calendar-league-details" href="/analytics/match/3178871/"
                 >تفاصيل</a
               >
               <button
-                class="calendar-league-switcher js-show-more"
+                id="calendar-league-switcher js-show-more"
                 type="button"
                 data-id="3178871"
               >
                 <span style="color: white; font-size: 1vw;"> + </span>
               </button>
             </div>
-            <div id="js-match-3178871" class="js-match-details"></div>
+            <div id="js-match-3178871" id="js-match-details"></div>
           </div>
         </div>
       </div>

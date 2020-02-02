@@ -88,7 +88,7 @@ ul {
       text-align: center;
       border-radius: 4px;
     }
-    .calender-date
+    #calender-date
     {
       margin: 0.3vw;
       margin-top: 0.5vw;
@@ -149,7 +149,7 @@ ul {
 
     }
 
-    .menuitem
+    #menuitem
     {
       padding: 1vw;
       color: white;
@@ -243,12 +243,12 @@ ul {
       height: 33vw;
       background-color:   black;
     }
-  .searchsection
+  #searchsection
   {
     float: right;
 
     }
-  .searchbar
+  #searchbar
   {
    width: 12vw;
     height: 2vw;
@@ -277,7 +277,7 @@ ul {
     perspective: 1000px;
     transform-style: preserve-3d;
   }
-   .searchtap
+   #searchtap
     {
       width: 2vw;
       height: 2vw;
@@ -304,21 +304,21 @@ ul {
     perspective: 1000px;
     transform-style: preserve-3d;
     }
-    .blankspan1
+    #blankspan1
     {
       float: right;
       width: 17vw;
       height: 2vw;
       margin-top: 0.5vw;
     }
-     .blankspan2
+     #blankspan2
     {
       float: right;
       width: 5vw;
       height: 2vw;
       margin-top: 0.5vw;
     }
-    .leagueimage img
+    #leagueimage img
     {
       float: right;
       width: 2vw;
@@ -328,7 +328,7 @@ ul {
       margin-top: 0.5vw;
     }
 
-    .navbar-live
+    #navbar-live
  {
     float: right;
 
@@ -342,7 +342,7 @@ ul {
 
 
   }
-  .btnlogin
+  #btnlogin
   {
     float: right;
     width: 6vw;
@@ -354,7 +354,7 @@ ul {
     border:1px solid  #018de8;
     margin-right:0.5vw;
   }
-  .btnsignup
+  #btnsignup
   {
     float: right;
     width: 6vw;
@@ -366,7 +366,7 @@ ul {
     border:1px solid  #018de8;
     margin-right:0.5vw;
   }
-  .or
+  #or
   {
     float: right;
     width: 2vw;
@@ -374,7 +374,7 @@ ul {
     margin-top: 1vw;
     color: white;
   }
-  .calendar-league-header {
+  #calendar-league-header {
     margin-top: 1vw;
     width:99.9%;
      display: -webkit-flex;
@@ -390,7 +390,7 @@ ul {
 }
 
 
-a.calendar-league-team:nth-of-type(1) {
+a#calendar-league-team:nth-of-type(1) {
     -webkit-flex-direction: row-reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
@@ -411,7 +411,7 @@ a:hover {
 
 
 
-a.calendar-league-team {
+a#calendar-league-team {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -442,7 +442,7 @@ a.calendar-league-team {
     background-color: white;
 }
 
-a.calendar-league-details {
+a#calendar-league-details {
     line-height: 32px;
     background-color: white;
     color:#25a9fe;
@@ -458,7 +458,7 @@ a {
     transition: .2s color ease;
 }
 
-button.calendar-league-switcher {
+button#calendar-league-switcher {
 
     width: 32px;
     height: 32px;
@@ -470,7 +470,7 @@ button.calendar-league-switcher {
     -ms-flex: 0 0 32px;
     flex: 0 0 32px;
 }
-.calendar-league-content {
+#calendar-league-content {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -480,7 +480,7 @@ button.calendar-league-switcher {
     padding: 10px;
   background-color: white;
   }
-  .calendar-league-content {
+  #calendar-league-content {
       border-top: 1px solid
   #f2f2f2;
   border-bottom: 1px solid
@@ -498,11 +498,11 @@ button.calendar-league-switcher {
   }
 
 
-.calendar-league
+#calendar-league
 {
   direction: rtl;
 }
-.tooltip {
+#tooltip {
 
     white-space: nowrap;
     border: 1px solid
@@ -518,13 +518,13 @@ box-shadow: 0 1px 3px
 rgba(0,0,0,.02),0 1px 2px
 rgba(0,0,0,.14);
 }
-.calendar-league-filter {
+#calendar-league-filter {
     margin-right: auto;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
 }
-span.calendar-league-score {
+span#calendar-league-score {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -542,10 +542,10 @@ span.calendar-league-score {
     color:
     #818b94;
 }
-span.calendar-league-score span:first-child {
+span#calendar-league-score span:first-child {
     margin-left: 5px;
 }
-span.calendar-league-score span {
+span#calendar-league-score span {
     background-color:
 #172839;
 border-radius: 2px;
@@ -558,7 +558,7 @@ color:
     font-size: 12px;
     display: block;
 }
-a.calendar-league-details {
+a#calendar-league-details {
     line-height: 32px;
     background-color:
 #f0f0f0;
@@ -570,7 +570,7 @@ color:
     transition: .35s background-color ease;
     margin-right: auto;
 }
-button.calendar-league-switcher {
+button#calendar-league-switcher {
     position: relative;
     width: 32px;
     height: 32px;

@@ -1,8 +1,8 @@
-const buttonSearch = document.getElementById("sbar");
+const buttonSearch = document.getElementById("buttonSearch");
 
 buttonSearch.addEventListener("click", event => {
   event.preventDefault();
-  const inputMatch = document.getElementById("match");
+  const inputMatch = document.getElementById("searchbar");
   searchRequest(inputMatch.value, (error, matches) => {
     if (error) {
       alert("Couldn't get data!");
