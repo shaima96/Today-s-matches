@@ -1,0 +1,27 @@
+{
+  "name": "today-s-matches",
+  "version": "1.0.0",
+  "description": "Website to know more details about games and matches.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaima96/Today-s-matches.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaima96/Today-s-matches/issues"
+  },
+  "homepage": "https://github.com/shaima96/Today-s-matches#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2",
+    "query-string": "^6.10.1",
+    "request": "^2.88.0"
+  }
+}
