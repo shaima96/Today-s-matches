@@ -6,7 +6,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="css/index.css" type="text/css" />
     <meta charset="utf-8" />
     <meta name="category" content="Sports" />
     <meta name="language" content="Ar" />
@@ -18,42 +17,45 @@
     <meta name="Propellerads" content="ecb303167fbad56424cab790730f11be" />
     <meta property="fb:pages" content="125755974109904" />
 
-    <link rel="stylesheet" type="text/css" href="gg.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+
     <title>مواعيد مباريات اليوم</title>
   </head>
   <body>
     <div id="topmenu">
-      <span id="blankspan1"></span>
-
-      <span id="leagues">
-        <span id="leagueimage"><img src="pics//morocco.svg"/></span>
-        <span id="leagueimage"><img src="pics//egypt.svg"/></span>
-        <span id="leagueimage"><img src="pics//Saudi Arabia.svg"/></span>
-        <span id="leagueimage"><img src="pics//france.svg"/></span>
-        <span id="leagueimage"><img src="pics//italy.svg"/></span>
-        <span id="leagueimage"><img src="pics//spain.svg"/></span>
-        <span id="leagueimage"><img src="pics//england.svg"/></span>
+      <span class="blankspan1"></span>
+      <span id="league-title">مواعيدمباريات اليوم</span>
+      <span class="leagues" id="leagues">
+        <span id="leagueimage"
+          ><img
+            src="https://i0.wp.com/www.jepharm.ps/wp-content/uploads/2018/03/palestine-flag-300x300.png?ssl=1"
+        /></span>
+        <span id="leagueimage"
+          ><img
+            src="https://w0.pngwave.com/png/467/520/flag-of-england-flag-of-the-united-kingdom-flag-of-great-britain-france-flag-png-clip-art.png"
+        /></span>
+        <span id="leagueimage"
+          ><img
+            src="https://lh4.googleusercontent.com/proxy/ddI6XFLYkgMICkWiyX7s4ndllLAFLJKdHJM4pNEvdJKk4XnKKf4N-DjMJZzT6OAjgI98RAWYZgDcEjcePx1r"
+        /></span>
+        <span id="leagueimage"
+          ><img
+            src="https://cdn2.vectorstock.com/i/1000x1000/44/61/morocco-flag-on-button-vector-24004461.jpg"
+        /></span>
+        <span id="leagueimage"
+          ><img
+            src="https://previews.123rf.com/images/gt29/gt291903/gt29190300017/119588123-lebanon-flag-round-bright-icon-vector-illustration.jpg"
+        /></span>
+        <span id="leagueimage"
+          ><img
+            src="https://cdn2.iconfinder.com/data/icons/world-flag-3/64/2-512.png"
+        /></span>
       </span>
 
-      <span id="blankspan2"></span>
+      <span class="blankspan2"></span>
 
-      <!--
-        <span id="searchsection">
-          <input
-            id="searchbar"
-            id="sbar"
-            type="search"
-            required=""
-            placeholder="    بحث..."
-            id="tt-query"
-            autocomplete="off"
-            spellcheck="false"
-            dir="auto"
-          />
-          <button id="searchtap" type="submit"><i id="fa fa-search"></i></button>
-        </span>
-      -->
-      <span id="searchsection">
+      <span class="searchsection">
         <form method="GET">
           <input
             list="browsers"
@@ -63,39 +65,50 @@
             placeholder="    بحث..."
             required
           />
-          <button type="submit" id="buttonSearch">Search</button>
         </form>
+        <button id="buttonSearch" type="submit">
+          <i class="fa fa-search" style="background-color: transparent;"></i>
+        </button>
       </span>
-      <a id="navbar-live" href=""> live <span>22</span> </a>
+      <a class="navbar-live"><b> live </b><span>22</span> </a>
 
-      <span id="navbar-live"> GMT-2 </span>
-      <button id="btnlogin" type="submit">دخول</button> <span id="or">أو</span>
-      <button id="btnsignup" type="submit">حساب جديد</button>
+      <span class="navbar-live2"> <b>GMT-2</b> </span>
+      <button class="btnlogin" type="submit">دخول</button>
+      <span class="or">أو</span>
+      <button class="btnsignup" type="submit">حساب جديد</button>
     </div>
-    <div id="namemenu"><p id="sitename">مواعيد مباريات اليوم</p></div>
+    <div id="namemenu"></div>
+
     <div id="bottommenu">
       <span id="menuitem"
         ><i
-          id="fa fa-home"
-          style="float: right; font-size: 1.7vw;padding-right: 1vw;padding-left: 1vw;"
+          class="fa fa-home"
+          style="float: right; font-size: 1.7vw;padding-right: 1vw;padding-left: 1vw;background-color: transparent;"
         ></i>
       </span>
-      <span id="menuitem">أمس</span> <span id="menuitem">مباريات اليوم</span>
-      <span id="menuitem">الغد</span> <span id="menuitem">الدوريات</span>
-      <span id="menuitem">الأخبار</span> <span id="menuitem">فيديو</span>
-      <span id="menuitem">ملخص المبارريات</span>
-      <span id="menuitem">مقالات وتحليلات</span>
-      <span id="menuitem">توقعات</span>
+      <span class="menuitem" id="menuitem"><b>أمس</b></span>
+      <span class="menuitem" id="menuitem"><b>مباريات اليوم</b></span>
+      <span class="menuitem" id="menuitem"><b>الغد</b></span>
+      <span class="menuitem" id="menuitem"><b>الدوريات</b></span>
+      <span class="menuitem" id="menuitem"><b>الأخبار</b></span>
+      <span class="menuitem" id="menuitem"><b>فيديو</b></span>
+      <span class="menuitem" id="menuitem"><b>ملخص المباريات</b></span>
+      <span class="menuitem" id="menuitem"><b>مقالات وتحليلات</b></span>
+      <span class="menuitem" id="menuitem"><b>توقعات</b></span>
     </div>
     <div id="site">
-      <div id="section1"><span id="s1">مباريات اليوم</span></div>
+      <div id="section1">
+        <span id="s1"><b>مباريات اليوم </b></span>
+      </div>
       <div id="chooseleague">
         <ul id="calenderbuttons">
           <li id="calenderdropdown">
-            اختر الدوري <i id="fa fa-angle-down"></i>
+            اختر الدوري <i class="fa fa-angle-down"></i>
           </li>
           <li id="calenderlive">جارية حاليا</li>
-          <li id="calender-form" id="calender-date">اختر التاريخ</li>
+          <li id="calender-form" class="calender-date" id="calender-date">
+            اختر التاريخ
+          </li>
         </ul>
 
         <div>
@@ -125,7 +138,7 @@
               <a href="/analytics/calendar/2020-01-30/" role="button">الخميس</a>
             </li>
 
-            <li title="الجمعة 31 يناير 2020" id="active">
+            <li title="الجمعة 31 يناير 2020" class="active" id="active">
               <a href="/analytics/calendar/2020-01-31/" role="button">الجمعة</a>
             </li>
 
@@ -139,110 +152,248 @@
           </ul>
         </div>
       </div>
-
-      <div id="256" id="calendar-league">
-        <div id="calendar-league-header">
-          <a
-            title="دوري أبطال أفريقيا"
-            id="calendar-league-heading"
-            href="/analytics/competition/256"
-          >
-            <img src="pics//256.png" alt="دوري أبطال أفريقيا" /><small
-              >دوري أبطال أفريقيا</small
-            >
-          </a>
-          <ul id="calendar-league-filter">
+      <div id="calendar-league"></div>
+    </div>
+    <footer class="footer">
+      <div class="footer-uno">
+        <div class="container">
+          <ul class="footer-pages">
+            <li><a href="/contact/about/">من نحن</a></li>
             <li>
-              <a
-                id="tooltip"
-                href="/analytics/competition/256/"
-                role="button"
-                data-tooltip="أخبار دوري أبطال أفريقيا "
-                ><i id="fa fa-calendar"></i
-              ></a>
+              <a href="/contact/terms-and-conditions/">الشروط والأحكام</a>
             </li>
-            <li>
-              <a
-                id="tooltip"
-                href="/analytics/competition/256/#section_separator"
-                role="button"
-                data-tooltip="إحصائيات دوري أبطال أفريقيا"
-                ><i id="fa fa-list"></i
-              ></a>
-            </li>
+            <li><a href="/contact/publish/">للنشر في الموقع</a></li>
+            <li><a href="/contact/ads/">أعلن معنا</a></li>
+            <li><a href="/contact/team/">فريق العمل</a></li>
           </ul>
-        </div>
-
-        <div id="calendar-league-main">
-          <div id="calendar-league-match">
-            <div id="calendar-league-content">
-              <time
-                id="calendar-league-time timezone time"
-                data-format="HH:mm"
-                data-value="2020-02-01 13:00"
-                >05:00</time
-              >
-
-              <a
-                id="calendar-league-team"
-                href="/analytics/team/3424/"
-                rel="اتحاد العاصمة"
-                title="اتحاد العاصمة"
-              >
-                <img src="pics//3424_50.png" alt="اتحاد العاصمة" />
-                <span>اتحاد العاصمة</span>
-              </a>
-              <a href="/analytics/match/3178871/">
-                <span id="calendar-league-score">
-                  <span id="">2</span> <span id="">2</span>
-                </span>
-              </a>
-              <a
-                id="calendar-league-team"
-                href="/analytics/team/6745/"
-                rel="بترو أتليتيكو"
-                title="بترو أتليتيكو"
-              >
-                <img
-                  src="pics//6745_50.png"
-                  style="margin-left: 10px;"
-                  alt="بترو أتليتيكو"
-                  title="اتحاد العاصمة"
-                />
-                <span>بترو أتليتيكو</span>
-              </a>
-
-              <span title=" استاد 20 أوت 1955" id="calendar-league-stade"
-                >استاد 20 أوت 1955</span
-              >
-
-              <span id="calendar-league-info">
+          <div class="footer-social">
+            <span>تابعونا على</span>
+            <ul>
+              <li>
                 <a
-                  title="الدورة 6"
-                  href="/analytics/season/17954/?gameweek=6#section_separator"
-                >
-                  الدورة 6
-                </a>
-              </span>
-
-              <a id="calendar-league-details" href="/analytics/match/3178871/"
-                >تفاصيل</a
-              >
-              <button
-                id="calendar-league-switcher js-show-more"
-                type="button"
-                data-id="3178871"
-              >
-                <span style="color: white; font-size: 1vw;"> + </span>
-              </button>
-            </div>
-            <div id="js-match-3178871" id="js-match-details"></div>
+                  href="https://www.youtube.com/channel/UCeOK-Kblp7K-M9xbAPSL7VQ"
+                  target="_blank"
+                  ><i class="fa fa-youtube"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/elbotola/" target="_blank"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/elbotola" target="_blank"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-    <div id="bottomdetails"></div>
-    <div id="footer"></div>
+      <div class="footer-dos">
+        <div class="container">
+          <div class="footer-column">
+            <h2 class="footer-heading">الدوريات</h2>
+            <ul class="footer-navigation">
+              <li>
+                <a href="/analytics/competition/7/">
+                  <img src="//images.elbotola.com/svg/laliga.svg" alt="" />
+                  <span>الدوري الإسباني الممتاز</span></a
+                >
+              </li>
+              <li>
+                <a href="/analytics/competition/8/">
+                  <img
+                    src="//images.elbotola.com/svg/premiereleague.svg"
+                    alt=""
+                  />
+                  <span>الدوري الإنجليزي الممتاز</span></a
+                >
+              </li>
+              <li>
+                <a href="/analytics/competition/13/">
+                  <img src="//images.elbotola.com/svg/calcio.svg" alt="" />
+                  <span>الدوري الإيطالي</span></a
+                >
+              </li>
+              <li>
+                <a href="/analytics/competition/16/">
+                  <img
+                    src="//images.elbotola.com/stats/competitions/16.png"
+                    alt=""
+                  />
+                  <span>الدوري الفرنسي - الدرجة الأولى</span></a
+                >
+              </li>
+              <li>
+                <a href="/analytics/competition/9/">
+                  <img
+                    src="//images.elbotola.com/stats/competitions/9.png"
+                    alt=""
+                  />
+                  <span>الدوري الألماني - الدرجة الأولى</span>
+                </a>
+              </li>
+              <li>
+                <a href="/analytics/competition/10/">
+                  <img
+                    src="//images.elbotola.com/svg/championsleague.svg"
+                    alt=""
+                  />
+                  <span>دوري أبطال أوروبا</span></a
+                >
+              </li>
+              <li>
+                <a href="/analytics/competition/18/">
+                  <img
+                    src="//images.elbotola.com/stats/competitions/18.png"
+                    alt=""
+                  />
+                  <span>الدوري الأوروبي</span>
+                </a>
+              </li>
+              <li>
+                <a href="/analytics/competition/209/">
+                  <img
+                    src="//images.elbotola.com/stats/competitions/50/209.png"
+                    alt=""
+                  />
+                  <span>الدوري المغربي الممتاز</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-heading">الأخبار</h2>
+            <ul class="footer-navigation">
+              <li>
+                <a href="/country/Morocco/">
+                  <img src="//images.elbotola.com/svg/morocco.svg" alt="" />
+                  <span>المغرب</span>
+                </a>
+              </li>
+              <li>
+                <a href="/country/Algeria/">
+                  <img src="//images.elbotola.com/svg/algeria.svg" alt="" />
+                  <span>الجزائر</span>
+                </a>
+              </li>
+              <li>
+                <a href="/country/Tunisia/">
+                  <img src="//images.elbotola.com/svg/tunisia.svg" alt="" />
+                  <span>تونس</span>
+                </a>
+              </li>
+              <li>
+                <a href="/country/Egypt/">
+                  <img src="//images.elbotola.com/svg/egypt.svg" alt="" />
+                  <span>مصر</span>
+                </a>
+              </li>
+              <li>
+                <a href="/country/Saudi Arabia/">
+                  <img src="//images.elbotola.com/svg/KSA.svg" alt="" />
+                  <span>السعودية</span>
+                </a>
+              </li>
+              <li>
+                <a href="/country/Spain/">
+                  <img src="//images.elbotola.com/svg/spain.svg" alt="" />
+                  <span>إسبانيا</span>
+                </a>
+              </li>
+              <li>
+                <a href="/country/England/">
+                  <img src="//images.elbotola.com/svg/England.svg" alt="" />
+                  <span>إنجلترا</span>
+                </a>
+              </li>
+              <li>
+                <a href="/country/Italy/">
+                  <img src="//images.elbotola.com/svg/italy.svg" alt="" />
+                  <span>إيطاليا</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-heading">ملخص المباريات</h2>
+            <ul class="footer-navigation">
+              <li>
+                <a href="/analytics/highlights/209/">
+                  <img
+                    src="//images.elbotola.com/stats/competitions/50/209.png"
+                    alt=""
+                  />
+                  <span>الدوري المغربي الممتاز</span>
+                </a>
+              </li>
+              <li>
+                <a href="/analytics/highlights/7/">
+                  <img src="//images.elbotola.com/svg/laliga.svg" alt="" />
+                  <span>الدوري الإسباني</span>
+                </a>
+              </li>
+              <li>
+                <a href="/analytics/highlights/8/">
+                  <img
+                    src="//images.elbotola.com/svg/premiereleague.svg"
+                    alt=""
+                  />
+                  <span>الدوري الإنجليزي الممتاز</span>
+                </a>
+              </li>
+              <li>
+                <a href="/analytics/highlights/13/">
+                  <img src="//images.elbotola.com/svg/calcio.svg" alt="" />
+                  <span>الدوري الإيطالي</span>
+                </a>
+              </li>
+              <li>
+                <a href="/analytics/highlights/16/">
+                  <img
+                    src="//images.elbotola.com/stats/competitions/16.png"
+                    alt=""
+                  />
+                  <span>الدوري الفرنسي - الدرجة الأولى</span>
+                </a>
+              </li>
+              <li>
+                <a href="/analytics/highlights/9/">
+                  <img
+                    src="//images.elbotola.com/stats/competitions/9.png"
+                    alt=""
+                  />
+                  <span>الدوري الألماني - الدرجة الأولى</span>
+                </a>
+              </li>
+              <li>
+                <a href="/analytics/highlights/10/">
+                  <img
+                    src="//images.elbotola.com/svg/championsleague.svg"
+                    alt=""
+                  />
+                  <span>دوري أبطال أوروبا</span>
+                </a>
+              </li>
+              <li>
+                <a href="/analytics/highlights/18/">
+                  <img
+                    src="//images.elbotola.com/stats/competitions/18.png"
+                    alt=""
+                  />
+                  <span>الدوري الأوروبي</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-heading">مع تحيات موقع مواعيد مباريات اليوم</h2>
+          </div>
+          <p class="footer-copy">&copy; 2020 مواعيد مباريات اليوم</p>
+        </div>
+      </div>
+    </footer>
     <script src="js/requests.js"></script>
     <script src="js/dom.js"></script>
   </body>

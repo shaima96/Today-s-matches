@@ -5,9 +5,9 @@ const searchRequest = function(value, cb) {
       return response.json();
     })
     .then(function(data) {
-      cb(null, data.matches);
+      return cb(null, data);
     })
     .catch(function(error) {
-      cb(true);
+      cb(error);
     });
 };

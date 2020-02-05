@@ -1,5 +1,3 @@
-require("dotenv").config();
-
 const http = require("http");
 const router = require("./router.js");
 const PORT = process.env.PORT || 5000;
