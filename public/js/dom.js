@@ -6,7 +6,7 @@ buttonSearch.addEventListener("click", event => {
 
   searchRequest(inputMatch.value, (error, matches) => {
     if (error) {
-      // alert("Couldn't get data!");
+      alert("Couldn't get data!");
     } else {
       updateMatches(matches.results);
     }
@@ -31,6 +31,7 @@ var updateMatches = function(matchesList) {
     const competitionName = document.createElement("h2");
     competitionName.innerText = match.competition.name;
     competitionName.setAttribute("class", "competitionName");
+
     listSection.appendChild(competitionName);
     /////////////Team A
     const firstTeamName = document.createElement("p");
@@ -48,6 +49,12 @@ var updateMatches = function(matchesList) {
     firstTeamScore.setAttribute("class", "firstTeamScore");
     listSection.appendChild(firstTeamScore);
     ////////////Team B
+
+    const secondTeamScore = document.createElement("h2");
+    secondTeamScore.innerText = match.fs_B;
+    secondTeamScore.setAttribute("class", "secondTeamScore");
+    listSection.appendChild(secondTeamScore);
+
     const secondTeamName = document.createElement("p");
     secondTeamName.innerText = match.team_B_name;
     secondTeamName.setAttribute("class", "secondTeamName");
@@ -58,41 +65,61 @@ var updateMatches = function(matchesList) {
     secondTeamImg.setAttribute("class", "secondTeamImg");
     listSection.appendChild(secondTeamImg);
 
-    const secondTeamScore = document.createElement("h2");
-    secondTeamScore.innerText = match.fs_B;
-    secondTeamScore.setAttribute("class", "secondTeamScore");
-    listSection.appendChild(secondTeamScore);
-
-    const matchTime = document.createElement("time");
-    matchTime.innerText = match.time_utc;
-    listSection.appendChild(matchTime);
+    const matchTimeFinal = document.createElement("p");
+    matchTimeFinal.innerText = match.time_utc;
+    matchTimeFinal.setAttribute("class", "matchTimeFinal");
+    listSection.appendChild(matchTimeFinal);
 
     imageDiv.appendChild(competitionName);
-    imageDiv.appendChild(firstTeamName);
     imageDiv.appendChild(firstTeamImg);
-    imageDiv.appendChild(secondTeamName);
-    imageDiv.appendChild(secondTeamImg);
+    imageDiv.appendChild(firstTeamName);
     imageDiv.appendChild(firstTeamScore);
     imageDiv.appendChild(secondTeamScore);
-    imageDiv.appendChild(matchTime);
+    imageDiv.appendChild(secondTeamImg);
+    imageDiv.appendChild(secondTeamName);
+    imageDiv.appendChild(matchTimeFinal);
   });
 };
 var arr;
-var searchDate = "2020-02-02";
-var didMount = () => {
-  var yyyy = new Date().getFullYear();
-  var mm =
-    new Date().getMonth() < 10
-      ? "0" + new Date().getMonth()
-      : new Date().getMonth();
-  var dd =
-    new Date().getDate() < 10
-      ? "0" + new Date().getDate()
-      : new Date().getDate();
-  searchRequest(yyyy + "-" + mm + "-" + dd, (err, data) => {
+var h;
+var didMount = h => {
+  var d = new Date();
+  d.setDate(d.getDate() + h);
+  console.log(d.getMonth(), "ddddd");
+  var yyyy = d.getFullYear();
+  var mm = d.getMonth() + 1 < 10 ? "0" + (d.getMonth() + 1) : d.getMonth() + 1;
+  var dd = d.getDate() < 10 ? "0" + d.getDate() : d.getDate();
+  const date = yyyy + "-" + mm + "-" + dd;
+
+  searchRequest(date, (err, data) => {
     arr = data.results;
+
     updateMatches(data.results);
   });
 };
 
-didMount();
+console.log("date", didMount());
+
+const searchYesterdayMatch = document.getElementById("btntom");
+searchYesterdayMatch.addEventListener("click", event => {
+  event.preventDefault();
+  searchRequest(didMount() - 1, (error, matches) => {
+    if (error) {
+      alert("Couldn't get data!");
+    } else {
+      updateMatches(matches.results);
+    }
+  });
+});
+
+const searchTommorrowMatch = document.getElementById("btnyes");
+searchTommorrowMatch.addEventListener("click", event => {
+  event.preventDefault();
+  searchRequest(didMount() + 1, (error, matches) => {
+    if (error) {
+      alert("Couldn't get data!");
+    } else {
+      updateMatches(matches.results);
+    }
+  });
+});

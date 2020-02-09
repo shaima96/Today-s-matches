@@ -26,7 +26,7 @@
     <div id="topmenu">
       <span class="blankspan1"></span>
       <span id="league-title">مواعيدمباريات اليوم</span>
-      <span class="leagues" id="leagues">
+      <span>
         <span id="leagueimage"
           ><img
             src="https://i0.wp.com/www.jepharm.ps/wp-content/uploads/2018/03/palestine-flag-300x300.png?ssl=1"
@@ -86,9 +86,30 @@
           style="float: right; font-size: 1.7vw;padding-right: 1vw;padding-left: 1vw;background-color: transparent;"
         ></i>
       </span>
-      <span class="menuitem" id="menuitem"><b>أمس</b></span>
-      <span class="menuitem" id="menuitem"><b>مباريات اليوم</b></span>
-      <span class="menuitem" id="menuitem"><b>الغد</b></span>
+      <span class="day-matches">
+        <span id="menuitem"
+          ><b
+            >
+            <span style="float: right;">
+   <button id="btnyes"  type="submit" style="border:none;background-color: #172839;margin-top: 0px;height: 4vw;margin: 0px;margin-left: -5px;margin-top: -1vw;color: #fff;"><i
+             class="fa fa-angle-left"
+             id="arrow-left"
+             style="font-size: 1vw;"
+           ></i>
+   الغد</button>
+   <button  id="btntod" style="border:none;background-color: #172839;margin-top: 0px;height: 4vw;margin: 0px;margin-left: -5px;margin-top: -1vw;color: #fff;" type="submit">مباريات اليوم</button>
+   <button  id="btntom" style="border:none;background-color: #172839;margin-top: 0px;height: 4vw;margin: 0px;margin-left: -5px;margin-top: -1vw;color: #fff;" type="submit">
+   أمس
+   <i
+             class="fa fa-angle-right"
+             id="arrow-right"
+             style="font-size: 1vw;"
+           ></i>
+ </button>
+</span>
+</span>
+</span>
+   </span>
       <span class="menuitem" id="menuitem"><b>الدوريات</b></span>
       <span class="menuitem" id="menuitem"><b>الأخبار</b></span>
       <span class="menuitem" id="menuitem"><b>فيديو</b></span>
@@ -106,9 +127,7 @@
             اختر الدوري <i class="fa fa-angle-down"></i>
           </li>
           <li id="calenderlive">جارية حاليا</li>
-          <li id="calender-form" class="calender-date" id="calender-date">
-            اختر التاريخ
-          </li>
+          <li id="calender-form" class="calender-date">اختر التاريخ</li>
         </ul>
 
         <div>
@@ -231,7 +250,7 @@
                     src="//images.elbotola.com/stats/competitions/9.png"
                     alt=""
                   />
-                  <span>الدوري الألماني - الدرجة الأولى</span>
+                  <span>الدوري الألماني</span>
                 </a>
               </li>
               <li>
@@ -355,7 +374,7 @@
                     src="//images.elbotola.com/stats/competitions/16.png"
                     alt=""
                   />
-                  <span>الدوري الفرنسي - الدرجة الأولى</span>
+                  <span>الدوري الفرنسي</span>
                 </a>
               </li>
               <li>
@@ -364,7 +383,7 @@
                     src="//images.elbotola.com/stats/competitions/9.png"
                     alt=""
                   />
-                  <span>الدوري الألماني - الدرجة الأولى</span>
+                  <span>الدوري الألماني</span>
                 </a>
               </li>
               <li>
@@ -387,9 +406,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer-column">
-            <h2 class="footer-heading">مع تحيات موقع مواعيد مباريات اليوم</h2>
-          </div>
+
           <p class="footer-copy">&copy; 2020 مواعيد مباريات اليوم</p>
         </div>
       </div>
