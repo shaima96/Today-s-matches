@@ -6,7 +6,6 @@ buttonSearch.addEventListener("click", event => {
 
   searchRequest(inputMatch.value, (error, matches) => {
     if (error) {
-      alert("Couldn't get data!");
     } else {
       updateMatches(matches.results);
     }
@@ -85,12 +84,10 @@ var h;
 var didMount = h => {
   var d = new Date();
   d.setDate(d.getDate() + h);
-  console.log(d.getMonth(), "ddddd");
   var yyyy = d.getFullYear();
   var mm = d.getMonth() + 1 < 10 ? "0" + (d.getMonth() + 1) : d.getMonth() + 1;
   var dd = d.getDate() < 10 ? "0" + d.getDate() : d.getDate();
   const date = yyyy + "-" + mm + "-" + dd;
-
   searchRequest(date, (err, data) => {
     arr = data.results;
 
@@ -98,28 +95,16 @@ var didMount = h => {
   });
 };
 
-console.log("date", didMount());
+didMount(0);
 
 const searchYesterdayMatch = document.getElementById("btntom");
 searchYesterdayMatch.addEventListener("click", event => {
   event.preventDefault();
-  searchRequest(didMount() - 1, (error, matches) => {
-    if (error) {
-      alert("Couldn't get data!");
-    } else {
-      updateMatches(matches.results);
-    }
-  });
+  didMount(-1);
 });
 
 const searchTommorrowMatch = document.getElementById("btnyes");
 searchTommorrowMatch.addEventListener("click", event => {
   event.preventDefault();
-  searchRequest(didMount() + 1, (error, matches) => {
-    if (error) {
-      alert("Couldn't get data!");
-    } else {
-      updateMatches(matches.results);
-    }
-  });
+  didMount(+1);
 });
