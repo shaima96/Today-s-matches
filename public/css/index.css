@@ -1073,14 +1073,25 @@ direction: rtl;
     margin-top: -2vw;
     margin-right: 3vw;
 }
-.firstTeamName,.secondTeamName{
+.firstTeamName{
 color: black;
 margin-right: 1vw;
 font-weight: bold;
 }
-.firstTeamImg,.secondTeamImg{
+
+.secondTeamName
+{
+  color: black;
+  margin-right: 1vw;
+  font-weight: bold;
+  display: block;
+}
+.firstTeamImg{
   margin-right: 5vw;
 
+}
+.secondTeamImg{
+  margin-left: 0.5vw;
 }
 .matchTimeFinal {
     color: red;
@@ -1095,7 +1106,7 @@ font-weight: bold;
   color: red;
 }
 .secondTeamScore{
-  margin-left: 2vw;
-  margin-right: 2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
   color: red;
 }
