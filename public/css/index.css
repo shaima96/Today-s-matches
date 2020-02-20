@@ -856,7 +856,15 @@ p2 {
 	margin: 0px;
 	direction: rtl;
 }
-
+#arrow-right {
+	background-color: transparent;
+	margin: 0px;
+	direction: rtl;
+}
+.days:active .days:checked .days:hover {
+	color:#172839;
+	background-color: #fff;
+}
 .competitionName {
 	color: black;
 	font-size: 20px;
