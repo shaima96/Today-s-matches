@@ -1,1112 +1,908 @@
-body
-    {
-      margin: 0px;
-      background-color: #28445b;
-    }
-    #topmenu
-    {
-      width:110%;
-      height: 3.3vw;
-      background-color: black;
-      position:fixed;
-      text-align: center;
-    }
-    #site
-    {
-      width: 65%;
-            margin-left: 17.5%;
-      background-color: white;
+body {
+	margin: 0px;
+	background-color: #28445b;
+}
 
-    }
-    #namemenu
-    {
-      width: 65%;
-      background-color: white;
+#topmenu {
+	width: 110%;
+	height: 3.3vw;
+	background-color: black;
+	position: fixed;
+	text-align: center;
+}
 
-      margin-left: 17.5%;
-      height: 6vw;
-    }
-    #sitename
-    {
-      text-align: right;
-      color: black;
-      font-size: 2vw;
-      margin: 0px;
-      padding: 3.4vw
+#site {
+	width: 65%;
+	margin-left: 17.5%;
+	background-color: white;
+}
 
-    }
+#namemenu {
+	width: 65%;
+	background-color: white;
+	margin-left: 17.5%;
+	height: 6vw;
+}
+
+#sitename {
+	text-align: right;
+	color: black;
+	font-size: 2vw;
+	margin: 0px;
+	padding: 3.4vw
+}
 
 ul {
+	list-style: none;
+	margin: 0;
+	margin-right: 0px;
+	padding: 0;
+	padding-right: 0px;
+}
 
-    list-style: none;
-    margin: 0;
-        margin-right: 0px;
-    padding: 0;
-        padding-right: 0px;
+#calenderbuttons {
+	margin-right: auto;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	direction: rtl;
+	float: right;
+}
 
+#calenderdropdown {
+	margin: 0.3vw;
+	margin-top: 0.5vw;
+	width: 8vw;
+	padding-top: 0.5vw;
+	padding-bottom: 1.1vw;
+	background-color: white;
+	text-align: center;
+	border-radius: 4px;
+}
+
+#calenderlive {
+	margin: 0.3vw;
+	margin-top: 0.5vw;
+	width: 8vw;
+	font-size: 12px;
+	padding-top: 0.5vw;
+	padding-bottom: 1.1vw;
+	background-color: white;
+	text-align: center;
+	border-radius: 4px;
+}
+
+#calender-form {
+	margin: 0.3vw;
+	margin-top: 0.5vw;
+	width: 8vw;
+	padding-top: 0.5vw;
+	padding-bottom: 1.1vw;
+	background-color: white;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.calender-date {
+	margin: 0.3vw;
+	margin-top: 0.5vw;
+	width: 8vw;
+	padding-top: 0.5vw;
+	padding-bottom: 1.1vw;
+	background-color: white;
+	text-align: center;
+	border-radius: 4px;
+}
+
+#bottommenu {
+	width: 65%;
+	margin-left: 17.5%;
+	height: 3vw;
+	background-color: darkgreen;
+	text-align: right;
+	padding-top: 1vw;
+	background-color: #28445b;
+}
+
+#menuitem {
+	padding: 1vw;
+	color: white;
+	font-size: 1vw;
+}
+
+#section1 {
+	margin: 0px;
+	height: 4vw;
+	background-color: white;
+	color: #018de8;
+	padding-top: 1vw;
+	text-align: right;
+	padding-right: 1.6vw;
+}
+
+#s1 {
+	font-size: 2vw;
 }
 
 
-    #calenderbuttons
-    {
-    margin-right: auto;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    direction: rtl;
-    float: right;
-    }
-    #calenderdropdown
-    {
-      margin: 0.3vw;
-      margin-top: 0.5vw;
-      width: 8vw;
-      padding-top: 0.5vw;
-      padding-bottom: 1.1vw;
-      background-color: white;
-      text-align: center;
-      border-radius: 4px;
-    }
-    #calenderlive
-    {
-      margin: 0.3vw;
-      margin-top: 0.5vw;
-      width: 8vw;
-      font-size: 12px;
-      padding-top: 0.5vw;
-      padding-bottom: 1.1vw;
-      background-color: white;
-      text-align: center;
-      border-radius: 4px;
-    }
-    #calender-form
-    {
-      margin: 0.3vw;
-      margin-top: 0.5vw;
-      width: 8vw;
-      padding-top: 0.5vw;
-      padding-bottom: 1.1vw;
-      background-color: white;
-      text-align: center;
-      border-radius: 4px;
-    }
-    .calender-date
-    {
-      margin: 0.3vw;
-      margin-top: 0.5vw;
-      width: 8vw;
-      padding-top: 0.5vw;
-      padding-bottom: 1.1vw;
-      background-color: white;
-      text-align: center;
-      border-radius: 4px;
-    }
-   #calendar-navigation {
-
-  display:inline-flex;
-    margin: 0.3vw;
-      margin-top: 0.5vw;
-      width: 30vw;
-      padding-top: 0.5vw;
-      margin-left: 0.5vw;
-      padding-bottom: 1.1vw;
-      background-color: white;
-      text-align: center;
-      border-radius: 4px;
-
 }
-#calendar-navigation a
-{
-      text-decoration: none;
-      color: black;
-      align-items: center;
-      margin: 0.3vw;
-      margin-top: 0.5vw;
-      width: 8vw;
-      padding-top: 0.5vw;
-      padding-bottom: 1.1vw;
-      background-color: white;
-      text-align: center;
-      border-radius: 4px;
-      padding-left: 0.5vw;
-
+#details {
+	margin-top: 1vw;
+	margin-bottom: vw;
+	margin-left: 1.5%;
+	width: 97%;
+	text-align: right;
+	direction: rtl;
+	height: 10vw;
+	border: 0.09vw solid gray;
+	background-color: white;
+	border-radius: 0.2vw;
 }
-    #bottommenu
-    {
-      width: 65%;
-      margin-left: 17.5%;
-      height: 3vw;
-      background-color: darkgreen;
-      text-align: right;
-      padding-top: 1vw;
-
-    background-color: #28445b;
-
-    }
-
-    #menuitem
-    {
-      padding: 1vw;
-      color: white;
-      font-size: 1vw;
-
-      }
-    #section1
-    {
-      margin:0px;
-      height: 4vw;
-      background-color: white;
-      color: #018de8;
-      padding-top: 1vw;
-      text-align: right;
-      padding-right: 1.6vw;
-    }
-    #s1
-    {
-         font-size: 2vw;
-    }
-    #chooseleague
-    {
-      width: 97%;
-      margin-left: 1.5% ;
-      height: 4vw;
-      background-color:  #1c2e3c;
-      border-radius: 0.2vw;
-
-    }
-    #details
-    {
-      margin-top: 1vw;
-      margin-bottom: vw;
-      margin-left: 1.5% ;
-      width: 97%;
-      text-align: right;
-      direction: rtl;
-      height: 10vw;
-      border: 0.09vw solid gray;
-      background-color: white;
-      border-radius: 0.2vw;
-
-
-    }
-    #team
-    {width: 80%;
-      height: 2vw;
-      font-size: 1.5vw;
-      padding-right: 1vw;
-      text-align: right;
-
-
-    }
-     #teamtime
-    {
-      width: 20%;
-      text-align: left;
-
-      height: 2vw;
-      font-size: 1.5vw;
-    }
-    #teamdetail
-    {
-
-      height: 2vw;
-      font-size: 1.5vw;
-      padding-left: 1vw;
-    }
-    #bottomdetails
-    {
-      width:100%;
-      height: 5vw;
-      background-color:   #252525;
-      position: fi
-    }
-    #wht
-    {
-
-      margin: 0px;
-      padding: 0.5vw
-
-    }
-
-  .searchsection
-  {
-    float: right;
-
-    }
-  #searchbar
-  {
-   width: 12vw;
-    height: 2vw;
-    border:1px solid red;
-    border-radius: 1vw;
-    margin-top: 0.5vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    background-color: #28445b;
-    color: white;
-    padding-left: 1vw;
-    text-align: right;
-    direction: rtl;
-
-  }
-#sbar:hover{
-    height: 2vw;
-    color: purple;
-    border-radius: 1vw;
-    margin-top: 0.5vw;
-    border:1px solid purple;
-    background-color:white;
-    object-position: center;
-    transition: transform 0.8s;
-    transform: scale(1.2);
-    perspective: 1000px;
-    transform-style: preserve-3d;
-  }
-   #buttonSearch
-    {
-      width: 2vw;
-      height: 2vw;
-      color: white;
-      margin-top: -2.1vw;
-      background-color: #28445b;
-      border:1px solid red;
-      border-radius: 100%;
-      align-items: center;
-      float:left;
-      margin-left: 17vw;
-    }
-
-    .blankspan1
-    {
-      float: right;
-      width: 17vw;
-      height: 2vw;
-      margin-top: 0.5vw;
-    }
-     .blankspan2
-    {
-      float: right;
-      width: 5vw;
-      height: 2vw;
-      margin-top: 0.5vw;
-    }
-    #leagueimage img
-    {
-      float:right;
-      width: 2vw;
-      height: 2vw;
-      border-radius: 100%;
-      margin-right: 0.5vw;
-      margin-top: 0.5vw;
-    }
-
-    .navbar-live
- {
-    float: right;
-
-    display: block;
-    text-decoration: none;
-    color: red;
-    font-size: 1vw;
-    margin-top: 1vw;
-    margin-right: 1vw;
-    margin-left: 1vw;
-
-
-  }
-  .navbar-live2
-{
-  float: right;
-  font-size: 10px;
-  display: block;
-  text-decoration: none;
-  color:yellow;
-  font-size: 1vw;
-  margin-top: 1vw;
-  margin-right: 1vw;
-  margin-left: 1vw;
-
-
+#team {
+	width: 80%;
+	height: 2vw;
+	font-size: 1.5vw;
+	padding-right: 1vw;
+	text-align: right;
 }
-  .btnlogin
-  {
-    float: right;
-    width: 6vw;
-    height: 2vw;
-    margin-top: 0.5vw;
-    border-radius:1vw;
-    color:  #018de8;
-    background-color: black;
-    border:1px solid  #018de8;
-    margin-right:0.5vw;
-  }
-  .btnsignup
-  {
-    float: right;
-    width: 6vw;
-    height: 2vw;
-    margin-top: 0.5vw;
-    border-radius:1vw;
-    color: white;
-    background-color:  #018de8;
-    border:1px solid  #018de8;
-    margin-right:0.5vw;
-    font-size: 9pt;
-  }
-  .or
-  {
-    float: right;
-    width: 2vw;
-    height: 2vw;
-    margin-top: 1vw;
-    color: white;
-  }
-  #img {
-    margin-top: 1vw;
-    width:99.9%;
-     display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 3px 3px 0 0;
-    border: 1px solid
-    #ececec;
+#teamtime {
+	width: 20%;
+	text-align: left;
+	height: 2vw;
+	font-size: 1.5vw;
 }
-
-
+#teamdetail {
+	height: 2vw;
+	font-size: 1.5vw;
+	padding-left: 1vw;
+}
+#bottomdetails {
+	width: 100%;
+	height: 5vw;
+	background-color: #252525;
+	position: fi
+}
+#wht {
+	margin: 0px;
+	padding: 0.5vw
+}
+.searchsection {
+	float: right;
+}
+#searchbar {
+	width: 12vw;
+	height: 2vw;
+	border: 1px solid red;
+	border-radius: 1vw;
+	margin-top: 0.5vw;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	background-color: #28445b;
+	color: white;
+	padding-left: 1vw;
+	text-align: right;
+	direction: rtl;
+}
+#sbar:hover {
+	height: 2vw;
+	color: purple;
+	border-radius: 1vw;
+	margin-top: 0.5vw;
+	border: 1px solid purple;
+	background-color: white;
+	object-position: center;
+	transition: transform 0.8s;
+	transform: scale(1.2);
+	perspective: 1000px;
+	transform-style: preserve-3d;
+}
+#buttonSearch {
+	width: 2vw;
+	height: 2vw;
+	color: white;
+	margin-top: -2.1vw;
+	background-color: #28445b;
+	border: 1px solid red;
+	border-radius: 100%;
+	align-items: center;
+	float: left;
+	margin-left: 17vw;
+}
+.blankspan1 {
+	float: right;
+	width: 17vw;
+	height: 2vw;
+	margin-top: 0.5vw;
+}
+.blankspan2 {
+	float: right;
+	width: 5vw;
+	height: 2vw;
+	margin-top: 0.5vw;
+}
+#leagueimage img {
+	float: right;
+	width: 2vw;
+	height: 2vw;
+	border-radius: 100%;
+	margin-right: 0.5vw;
+	margin-top: 0.5vw;
+}
+.navbar-live {
+	float: right;
+	display: block;
+	text-decoration: none;
+	color: red;
+	font-size: 1vw;
+	margin-top: 1vw;
+	margin-right: 1vw;
+	margin-left: 1vw;
+}
+.navbar-live2 {
+	float: right;
+	font-size: 10px;
+	display: block;
+	text-decoration: none;
+	color: yellow;
+	font-size: 1vw;
+	margin-top: 1vw;
+	margin-right: 1vw;
+	margin-left: 1vw;
+}
+.btnlogin {
+	float: right;
+	width: 6vw;
+	height: 2vw;
+	margin-top: 0.5vw;
+	border-radius: 1vw;
+	color: #018de8;
+	background-color: black;
+	border: 1px solid #018de8;
+	margin-right: 0.5vw;
+}
+.btnsignup {
+	float: right;
+	width: 6vw;
+	height: 2vw;
+	margin-top: 0.5vw;
+	border-radius: 1vw;
+	color: white;
+	background-color: #018de8;
+	border: 1px solid #018de8;
+	margin-right: 0.5vw;
+	font-size: 9pt;
+}
+.or {
+	float: right;
+	width: 2vw;
+	height: 2vw;
+	margin-top: 1vw;
+	color: white;
+}
+#img {
+	margin-top: 1vw;
+	width: 99.9%;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: white;
+	border-radius: 3px 3px 0 0;
+	border: 1px solid #ececec;
+}
 a.calendar-league-team:nth-of-type(1) {
-    -webkit-flex-direction: row-reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+	-webkit-flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
-
-
-
-
-
-
 a:hover {
-    color: red;
-    text-decoration: none;
-    outline: 0;
-    transition: .25s color ease;
+	color: red;
+	text-decoration: none;
+	outline: 0;
+	transition: .25s color ease;
 }
-
-
-
-
 a.calendar-league-team {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-flex: 0 0 170px;
-    -ms-flex: 0 0 170px;
-    flex: 0 0 170px;
-    width: 170px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 1vw;
-    color:
-    #32404b;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-flex: 0 0 170px;
+	-ms-flex: 0 0 170px;
+	flex: 0 0 170px;
+	width: 170px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 1vw;
+	color: #32404b;
 }
-
-.calendar-league-info, .calendar-league-stade, a.calendar-league-watch {
-    flex: 1 1 50%;
-    font-size: 1vw;
-    color: #32404b;
-    background-color: white;
+.calendar-league-info,
+.calendar-league-stade,
+a.calendar-league-watch {
+	flex: 1 1 50%;
+	font-size: 1vw;
+	color: #32404b;
+	background-color: white;
 }
-
 a.calendar-league-details {
-    line-height: 32px;
-    background-color: white;
-    color:#25a9fe;
-    border-radius: 2px;
-    padding: 0 9px;
-    font-size: 12px;
-
+	line-height: 32px;
+	background-color: white;
+	color: #25a9fe;
+	border-radius: 2px;
+	padding: 0 9px;
+	font-size: 12px;
 }
 a {
-    color: #25a9fe;
-    text-decoration: none;
-    outline: 0;
-    transition: .2s color ease;
+	color: #25a9fe;
+	text-decoration: none;
+	outline: 0;
+	transition: .2s color ease;
 }
-
 button.calendar-league-switcher {
-
-    width: 32px;
-    height: 32px;
-    background-color:
-    #25a9fe;
-    border-radius: 2px;
-    margin-right: 10px;
-    -webkit-flex: 0 0 32px;
-    -ms-flex: 0 0 32px;
-    flex: 0 0 32px;
+	width: 32px;
+	height: 32px;
+	background-color: #25a9fe;
+	border-radius: 2px;
+	margin-right: 10px;
+	-webkit-flex: 0 0 32px;
+	-ms-flex: 0 0 32px;
+	flex: 0 0 32px;
 }
 .calendar-league-content {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 10px;
-  background-color: white;
-  }
-  .calendar-league-content {
-      border-top: 1px solid
-  #f2f2f2;
-  border-bottom: 1px solid
-  #f2f2f2;
-  border-right: 1px solid
-  #ececec;
-  border-left: 1px solid
-  #ececec;
-  position: relative;
-  z-index: 1;
-  background-color:
-      #fff;
-      transition: .35s border-radius ease;
-  background-color: white;
-  }
-
-
-#calendar-league
-{
-  direction: rtl;
-
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 10px;
+	background-color: white;
+}
+.calendar-league-content {
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+	border-right: 1px solid #ececec;
+	border-left: 1px solid #ececec;
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+	transition: .35s border-radius ease;
+	background-color: white;
+}
+#calendar-league {
+	direction: rtl;
 }
 .tooltip {
-
-    white-space: nowrap;
-    border: 1px solid
-#fafafa;
-color:
-#172838;
-font-size: 1vw;
-
-padding: 0 0.5vw 0 0.5vw;
-margin-right: 0.05vw;
-margin-left: 1vw;
-box-shadow: 0 1px 3px
-rgba(0,0,0,.02),0 1px 2px
-rgba(0,0,0,.14);
+	white-space: nowrap;
+	border: 1px solid #fafafa;
+	color: #172838;
+	font-size: 1vw;
+	padding: 0 0.5vw 0 0.5vw;
+	margin-right: 0.05vw;
+	margin-left: 1vw;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .02), 0 1px 2px rgba(0, 0, 0, .14);
 }
-.calendar-league1{
-  border-style: ridge;
-  margin: 1vw;
-  height: 10vw;
-
-
+.calendar-league1 {
+	border-style: ridge;
+	margin: 1vw;
+	height: 10vw;
 }
-.calender-league1 .img{
-  width: 100vw;
-  height:100vw;
+.calender-league1 .img {
+	width: 100vw;
+	height: 100vw;
 }
-h2{
-  color: black;
-  font-size: 17px;
-  font-weight: bold;
+h2 {
+	color: black;
+	font-size: 17px;
+	font-weight: bold;
 }
-.firstTeamName
-{
-  float:right;
-  margin:0px;
-  -webkit-flex:flex;
+.firstTeamName {
+	float: right;
+	margin: 0px;
+	-webkit-flex: flex;
 }
-.firstTeamImg
-{
-  float:right;
-  margin:0px;
-  -webkit-flex:flex;
+.firstTeamImg {
+	float: right;
+	margin: 0px;
+	-webkit-flex: flex;
 }
-.firstTeamScore
-{
-  float:right;
-  margin:0px;
-  -webkit-flex:flex;
+.firstTeamScore {
+	float: right;
+	margin: 0px;
+	-webkit-flex: flex;
 }
-.secondTeamName
-{
-  float:right;
-  margin:0px;
-  -webkit-flex:flex;
+.secondTeamName {
+	float: right;
+	margin: 0px;
+	-webkit-flex: flex;
 }
-.secondTeamImg
-{
-  float:right;
-  margin:0px;
-  -webkit-flex:flex;
+.secondTeamImg {
+	float: right;
+	margin: 0px;
+	-webkit-flex: flex;
 }
-.secondTeamScore
-{
-  float:right;
-  margin:0px;
-  -webkit-flex:flex;
+.secondTeamScore {
+	float: right;
+	margin: 0px;
+	-webkit-flex: flex;
 }
-time{
-  float:right;
-  margin:0px;
-  -webkit-flex:flex;
+time {
+	float: right;
+	margin: 0px;
+	-webkit-flex: flex;
 }
-p1{
-  font-size: 20px;
-  font-weight: bold;
-
+p1 {
+	font-size: 20px;
+	font-weight: bold;
 }
-p2{
-  font-size: 20px;
-  font-weight: bold;
-
+p2 {
+	font-size: 20px;
+	font-weight: bold;
 }
-image2{
-  width: 100vw;
-  height:100vw;
-
+image2 {
+	width: 100vw;
+	height: 100vw;
 }
-time{
-  font-size: 17px;
-  font-weight: bold
-
+time {
+	font-size: 17px;
+	font-weight: bold
 }
 #calendar-league-filter {
-    margin-right: auto;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+	margin-right: auto;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
 }
 span.calendar-league-score {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-flex: 0 0 66px;
-    -ms-flex: 0 0 66px;
-    flex: 0 0 66px;
-    width: 66px;
-    font-size: 14px;
-    color:
-    #818b94;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-flex: 0 0 66px;
+	-ms-flex: 0 0 66px;
+	flex: 0 0 66px;
+	width: 66px;
+	font-size: 14px;
+	color: #818b94;
 }
 span.calendar-league-score span:first-child {
-    margin-left: 5px;
+	margin-left: 5px;
 }
 span.calendar-league-score span {
-    background-color:
-#172839;
-border-radius: 2px;
-line-height: 20px;
-width: 22px;
-text-align-last: center;
-color:
-    #fff;
-    font-weight: 700;
-    font-size: 12px;
-    display: block;
+	background-color: #172839;
+	border-radius: 2px;
+	line-height: 20px;
+	width: 22px;
+	text-align-last: center;
+	color: #fff;
+	font-weight: 700;
+	font-size: 12px;
+	display: block;
 }
 a.calendar-league-details {
-    line-height: 32px;
-    background-color:#f0f0f0;
-    color:#25a9fe;
-    border-radius: 2px;
-    padding: 0 9px;
-    font-size: 12px;
-    transition: .35s background-color ease;
-    margin-right: auto;
+	line-height: 32px;
+	background-color: #f0f0f0;
+	color: #25a9fe;
+	border-radius: 2px;
+	padding: 0 9px;
+	font-size: 12px;
+	transition: .35s background-color ease;
+	margin-right: auto;
 }
 button.calendar-league-switcher {
-    position: relative;
-    width: 32px;
-    height: 32px;
-    background-color:
-    #25a9fe;
-    border-radius: 2px;
-    margin-right: 10px;
-    -webkit-flex: 0 0 32px;
-    -ms-flex: 0 0 32px;
-    flex: 0 0 32px;
+	position: relative;
+	width: 32px;
+	height: 32px;
+	background-color: #25a9fe;
+	border-radius: 2px;
+	margin-right: 10px;
+	-webkit-flex: 0 0 32px;
+	-ms-flex: 0 0 32px;
+	flex: 0 0 32px;
 }
-img
-{
-  height:  2vw;
-  width: 2vw;
+img {
+	height: 2.5vw;
+	width: 4vw;
 }
-.calendar-league-heading{
-  color:black;
-  font-size: 1.3vw;
-  font-weight: bold;
-
+.calendar-league-heading {
+	color: black;
+	font-size: 1.3vw;
+	font-weight: bold;
 }
-#league-title
-{
-  color: white;
-  float: right;
-  line-height: 3vw;
-  font-size: 1.5vw;
-  margin-left: 5vw;
+#league-title {
+	color: white;
+	float: right;
+	line-height: 3vw;
+	font-size: 1.5vw;
+	margin-left: 5vw;
 }
 .footer-uno {
-    background-color:
-    #252525;
-    direction: rtl;
+	background-color: #252525;
+	direction: rtl;
 }
 .footer {
-    margin: 0 auto;
-    direction: rtl;
+	margin: 0 auto;
+	direction: rtl;
 }
-
 .footer-uno .container {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 78px;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	height: 78px;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
-
 ul {
-    list-style: none;
+	list-style: none;
 }
 .footer-brand {
-    margin-left: 50px;
-    transition: .35s opacity ease;
+	margin-left: 50px;
+	transition: .35s opacity ease;
 }
 a {
-    color:
-    #28445b;
-    text-decoration: none;
-    outline: 0;
-    transition: .2s color ease;
+	color: #28445b;
+	text-decoration: none;
+	outline: 0;
+	transition: .2s color ease;
 }
-
 .footer-pages {
-    margin-left: auto;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+	margin-left: auto;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
 }
 ul {
-    list-style: none;
-    margin: 0;
-        margin-left: 0px;
-    padding: 0;
+	list-style: none;
+	margin: 0;
+	margin-left: 0px;
+	padding: 0;
 }
-
 .footer-pages a:hover {
-
-    opacity: .7;
-    box-shadow: inset 0 -1px 0 0
-
-    rgba(255,255,255,.2);
-
+	opacity: .7;
+	box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, .2);
 }
 .footer-pages li:not(:last-child) {
-    margin-left: 30px;
+	margin-left: 30px;
 }
 .footer-pages a {
-    color:
-    #fff;
-    font-size: 14px;
-    line-height: 35px;
-    height: 35px;
-    display: block;
-    transition: .35s opacity ease,.35s box-shadow ease;
+	color: #fff;
+	font-size: 14px;
+	line-height: 35px;
+	height: 35px;
+	display: block;
+	transition: .35s opacity ease, .35s box-shadow ease;
 }
 .footer-social {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 .footer-social span {
-    color:
-    #fff;
-    font-size: 13px;
-    margin-left: 20px;
+	color: #fff;
+	font-size: 13px;
+	margin-left: 20px;
 }
+
 }
 .footer-social ul {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
 }
 .footer-social ul li:not(:last-child) {
-    margin-left: 14px;
+	margin-left: 14px;
 }
 .footer-social ul li:not(:last-child) {
-    margin-left: 14px;
+	margin-left: 14px;
 }
 .footer-social ul a {
-    display: block;
-    font-size: 16px;
-    border-radius: 50%;
+	display: block;
+	font-size: 16px;
+	border-radius: 50%;
 }
 .footer-social ul li:not(:last-child) {
-    margin-left: 14px;
+	margin-left: 14px;
 }
 .footer-social ul a {
-    display: block;
-    font-size: 16px;
-    border-radius: 50%;
+	display: block;
+	font-size: 16px;
+	border-radius: 50%;
 }
 .footer-social ul .fa-twitter {
-    background-color:
-    #1da1f2;
+	background-color: #1da1f2;
 }
 .footer-social ul a:hover .fa-twitter {
-    color:
-    #1da1f2;
-    background-color:
-    white;
+	color: #1da1f2;
+	background-color: white;
 }
 .footer-social ul .fa-youtube {
-    background-color:
-    #cd201f;
-    color:white;
+	background-color: #cd201f;
+	color:white;
 }
 .footer-social ul a:hover .fa-youtube {
-    color:
-    #cd201f;
-    background-color:
-    white;
+	color: #cd201f;
+	background-color: white;
 }
-
 .footer-social ul .fa-facebook {
-    background-color:
-    #3b5998;
-    color:white;
+	background-color: #3b5998;
+	color:white;
 }
 .footer-social ul a:hover .fa-facebook {
-    color:
-    #3b5998;
-    background-color:
-    white;
+	color: #3b5998;
+	background-color: white;
 }
 .footer-social ul .fa {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    color:
-    #fff;
-    transition: .35s color ease,.35s background-color ease;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	color: #fff;
+	transition: .35s color ease,
+	.35s background-color ease;
 }
 .fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-        font-size: 14px;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transform: translate(0, 0);
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: 14px;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
 }
 .fa {
-    background-color:
-    #fff;
+	background-color: #fff;
 }
 .footer-social ul .fa {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    color:
-    #fff;
-    transition: .35s color ease,.35s background-color ease;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	color: #fff;
+	transition: .35s color ease,
+	.35s background-color ease;
 }
 .fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-        font-size: 14px;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transform: translate(0, 0);
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: 14px;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
 }
 .footer-dos {
-    background-color:
-    #000;
-    padding-top: 25px;
-    height:50vw;
+	background-color: #000;
+	padding-top: 25px;
+	height:50vw;
 }
-body footer
-{
-  color:white;
+body footer {
+	color:white;
 }
 .footer-dos {
-    background-color:
-    #000;
-    padding-top: 25px;
+	background-color: #000;
+	padding-top: 25px;
 }
 .container {
-    max-width: 1020px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-    padding-right: 0;
+	max-width: 1020px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0;
+	padding-right: 0;
 }
 .footer-column:nth-child(2n+1):nth-child(4n+1) {
-    clear: both;
+	clear: both;
 }
 .footer-column:nth-child(2n+1):nth-child(n) {
-    float: right;
-    margin-left: 15px;
-    clear: none;
+	float: right;
+	margin-left: 15px;
+	clear: none;
 }
 .footer-column:nth-child(2n+1) {
-    width: calc(99.9%*3/10 - (15px - 15px*3/10));
+	width: calc(99.9%*3/10 - (15px - 15px*3/10));
 }
 .footer-column:nth-child(2n):nth-child(n) {
-    float: right;
-    margin-left: 15px;
-    clear: none;
+	float: right;
+	margin-left: 15px;
+	clear: none;
 }
 .footer-column:nth-child(2n) {
-    width: calc(99.9%*2/10 - (15px - 15px*2/10));
+	width: calc(99.9%*2/10 - (15px - 15px*2/10));
 }
 .footer-column:nth-child(2n+1):nth-child(n) {
-    float: right;
-    margin-left: 15px;
-    clear: none;
+	float: right;
+	margin-left: 15px;
+	clear: none;
 }
 .footer-column:nth-child(2n+1) {
-    width: calc(99.9%*3/10 - (15px - 15px*3/10));
+	width: calc(99.9%*3/10 - (15px - 15px*3/10));
 }
 .footer-column:nth-child(2n):nth-child(4n) {
-    margin-left: 0;
-    float: left;
+	margin-left: 0;
+	float: left;
 }
 .footer-column:nth-child(2n):nth-child(n) {
-    float: right;
-    margin-left: 15px;
-    clear: none;
+	float: right;
+	margin-left: 15px;
+	clear: none;
 }
 .footer-column:nth-child(2n) {
-    width: calc(99.9%*2/10 - (15px - 15px*2/10));
+	width: calc(99.9%*2/10 - (15px - 15px*2/10));
 }
 .footer-copy:last-child {
-    margin-left: 0;
+	margin-left: 0;
 }
 .footer-copy:nth-child(n) {
-    float: right;
-    margin-left: 0;
-    clear: none;
-
+	float: right;
+	margin-left: 0;
+	clear: none;
 }
 .footer-copy {
-    color:
-    #fff;
-    font-size: 13px;
-    height: 65px;
-    line-height: 65px;
-    text-align: center;
-    width: calc(99.9%*1);
-
+	color: #fff;
+	font-size: 13px;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+	width: calc(99.9%*1);
 }
 .container {
-
-    content: '';
-    display: table;
+	content: '';
+	display: table;
 }
 .footer-social ul {
-
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
 }
-#facebook-footer
-{
-  background:
-#fff;
-
-border: none;
-
-overflow: hidden;
-
-width: 189px;
-
-height: 170px;
+#facebook-footer {
+	background: #fff;
+	border: none;
+	overflow: hidden;
+	width: 189px;
+	height: 170px;
 }
 .footer-heading {
-    font-size: 13px;
-    margin: 3vw;
-    color:  #25a9fe;
-
-
+	font-size: 13px;
+	margin: 3vw;
+	color: #25a9fe;
 }
 .footer-app li {
-
-    margin-bottom: 8px;
-
+	margin-bottom: 8px;
 }
 .footer-app a {
-
-    transition: .35s opacity ease;
-
+	transition: .35s opacity ease;
 }
 a {
-    color:#25a9fe;
-    text-decoration: none;
-    outline: 0;
-    transition: .2s color ease;
+	color:#25a9fe;
+	text-decoration: none;
+	outline: 0;
+	transition: .2s color ease;
+}
+footer-navigation {
+	color:white;
+}
+.container {
+	color: white;
+}
+.footer-dos {
+	color: white;
+}
+.footer-column {
+	color:white;
+}
+.footer-navigation span {
+	color:white;
+}
+.footer-navigation span:hover {
+	color: red;
+}
+a fa {
+	color:white;
+	background-color: transparent;
+}
+img {
+	margin-top: 1vw;
+	margin-left: 0.5vw;
+	margin-right:0.5vw;
+}
+p1 {
+	margin:1vw;
+}
+p2 {
+	margin:1vw;
+}
+.result-league-image {
+	float: right;
+}
+.day-matches {
+	background-color: #28445b;
+	width: 9vw;
+	padding-top: 1vw;
+	padding-bottom: 1.5vw;
+	margin: 0.5vw;
+}
+#arrow-left {
+	background-color: transparent;
+	margin: 0px;
+	direction: rtl;
+}
 
-}
-footer-navigation
-{
-  color:white;
-}
-.container
-{
-  color: white;
-
-}
-.footer-dos
-{
-  color: white;
-}
-.footer-column
-{
-  color:white;
-}
-.footer-navigation span
-{
-  color:white;
-}
-.footer-navigation span:hover
-{
-  color: red;
-}
-a fa
-{
-  color:white;
-  background-color: transparent;
-}
-img
-{
-  margin-top: 1vw;
-  margin-left: 0.5vw;
-  margin-right:0.5vw;
-}
-p1
-{
-margin:1vw;
-
-}
-p2
-{
-  margin:1vw;
-}
-.result-league-image
-{
-  float: right;
-}
-.day-matches
-{
-  background-color:  #28445b ;
-  width: 9vw;
-  padding-top: 1vw;
-  padding-bottom: 1.5vw;
-  margin: 0.5vw;
-}
-#arrow-left
-{
-  background-color: transparent;
-  margin: 0px;
-
-direction: rtl;
-}
-#arrow-right
-{
-  background-color: transparent;
-  margin: 0px;
-
-direction: rtl;
-}
-.days:active .days:checked .days:hover
-{
-  color:#172839;
-  background-color: #fff;
-}
-.calendar-league-flag{
-  width:4vw;
-  height:4vw;
-}
 .competitionName {
-    color: black;
-    font-size: 17px;
-    font-weight: bold;
-    margin-top: -2vw;
-    margin-right: 3vw;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: -2vw;
+	margin-right: 5vw;
 }
-.firstTeamName{
-color: black;
-margin-right: 1vw;
-font-weight: bold;
+.firstTeamName {
+	color: black;
+	margin-top: 0.5vw;
+	font-weight: bold;
+	width: 13vw;
+	text-align: center;
 }
-
-.secondTeamName
-{
-  color: black;
-  margin-right: 1vw;
-  font-weight: bold;
-  display: block;
+.secondTeamName {
+	color: black;
+	font-weight: bold;
+	display: block;
+	width: 13vw;
+	margin-top: 0.5vw;
+	text-align: center;
+	margin-right: -2vw;
 }
-.firstTeamImg{
-  margin-right: 5vw;
-
+.firstTeamImg {
+	margin-right: 5vw;
 }
-.secondTeamImg{
-  margin-left: 0.5vw;
+.secondTeamImg {
+	margin-left: 0.5vw;
 }
 .matchTimeFinal {
-    color: red;
-    margin-left: 8vw;
-    padding-right: 8vw;
-    display: flex;
-
+	color: red;
+	margin-left: 10vw;
+	padding-right: 4vw;
+	display: flex;
+	padding-top: 0.5vw;
 }
-.firstTeamScore{
-  margin-left: 2vw;
-  margin-right: 2vw;
-  color: red;
+.firstTeamScore {
+	margin-left: 2vw;
+	margin-right: 2vw;
+	color: red;
+	margin-top: 0.5vw;
 }
-.secondTeamScore{
-  margin-left: 1vw;
-  margin-right: 1vw;
-  color: red;
+.secondTeamScore {
+	margin-left: 1vw;
+	margin-right: 1vw;
+	color: red;
+	margin-top: 0.5vw;
+	padding-left: 1vw;
 }
